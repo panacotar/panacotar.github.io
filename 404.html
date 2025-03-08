@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="canonical" href="https://organicdarius.com/blog/">
+    <script>location="/blog"</script>
+    <meta http-equiv="refresh" content="0; url=/blog">
 
     <title>404 - redirect to https://organicdarius.com/blog/</title>
     <script>
-      pathName = window.location.pathname;
-      window.location.replace("https://organicdarius.com" + pathName);
+      // pathName = window.location.pathname;
+      // window.location.replace("https://organicdarius.com" + pathName);
     </script>
 </head>
 
@@ -18,7 +20,8 @@
   <p>If redirecting takes too long, click <a id="redirectLink" href="#">here</a>.</p>
     <script>
         // Update the fallback link to match the destination
-        document.getElementById('redirectLink').href = "https://organicdarius.com" + pathName;
+        // document.getElementById('redirectLink').href = "https://organicdarius.com" + pathName;
+        document.getElementById('redirectLink').href = "https://organicdarius.com/blog";
     </script>
 </body>
 
