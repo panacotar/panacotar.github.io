@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="https://organicdarius.com/blog/">
+
+    <title>404 - redirect to https://organicdarius.com/blog/</title>
+    <script>
+      pathName = window.location.pathname;
+      window.location.replace("https://organicdarius.com" + pathName);
+    </script>
+</head>
+
+<body>
+  <p>If redirecting takes too long, click <a id="redirectLink" href="#">here</a>.</p>
+    <script>
+        // Update the fallback link to match the destination
+        document.getElementById('redirectLink').href = "https://organicdarius.com" + pathName;
+    </script>
+</body>
+
+</html>
